@@ -1,5 +1,10 @@
 const number = Number('200');
 console.log(number); // 200
+console.log(number === 200); // true
+
+const anotherNumber = new Number('200');
+console.log(anotherNumber); // 200
+console.log(anotherNumber === 200); // false
 
 const numberForNull = Number(null);
 console.log(numberForNull); // 0
@@ -24,3 +29,6 @@ console.log(numberForArrayWithOneElement); // 100
 
 const numberForArrayMultipleElements = Number([100, 200, 300]);
 console.log(numberForArrayMultipleElements); // NaN
+
+const numberObject = new Number(15);
+console.log(numberObject); // 15
